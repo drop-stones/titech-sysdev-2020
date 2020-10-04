@@ -5,7 +5,7 @@ target triple = "x86_64-apple-macosx10.15.0"
 
 %struct.user = type { i32, [10 x i8] }
 
-@__const.main.a = private unnamed_addr constant [5 x i32] [i32 0, i32 1, i32 2, i32 3, i32 4], align 16
+@__const.main.arr = private unnamed_addr constant [5 x i32] [i32 0, i32 1, i32 2, i32 3, i32 4], align 16
 @.str = private unnamed_addr constant [10 x i8] c"Your name\00", align 1
 @a = common global i32 0, align 4
 
@@ -20,7 +20,7 @@ define i32 @main(i32, i8**) #0 {
   store i32 %0, i32* %4, align 4
   store i8** %1, i8*** %5, align 8
   %8 = bitcast [5 x i32]* %6 to i8*
-  call void @llvm.memcpy.p0i8.p0i8.i64(i8* align 16 %8, i8* align 16 bitcast ([5 x i32]* @__const.main.a to i8*), i64 20, i1 false)
+  call void @llvm.memcpy.p0i8.p0i8.i64(i8* align 16 %8, i8* align 16 bitcast ([5 x i32]* @__const.main.arr to i8*), i64 20, i1 false)
   %9 = getelementptr inbounds %struct.user, %struct.user* %7, i32 0, i32 0
   store i32 100, i32* %9, align 4
   %10 = getelementptr inbounds %struct.user, %struct.user* %7, i32 0, i32 1
