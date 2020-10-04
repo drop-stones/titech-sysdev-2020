@@ -18,11 +18,11 @@ _main:                                  ## @main
 	mov	dword ptr [rbp - 52], 0
 	mov	dword ptr [rbp - 56], edi
 	mov	qword ptr [rbp - 64], rsi
-	mov	rax, qword ptr [rip + l___const.main.a]
+	mov	rax, qword ptr [rip + l___const.main.arr]
 	mov	qword ptr [rbp - 32], rax
-	mov	rax, qword ptr [rip + l___const.main.a+8]
+	mov	rax, qword ptr [rip + l___const.main.arr+8]
 	mov	qword ptr [rbp - 24], rax
-	mov	ecx, dword ptr [rip + l___const.main.a+16]
+	mov	ecx, dword ptr [rip + l___const.main.arr+16]
 	mov	dword ptr [rbp - 16], ecx
 	mov	dword ptr [rbp - 48], 100
 	lea	rax, [rbp - 48]
@@ -48,7 +48,7 @@ LBB0_2:
                                         ## -- End function
 	.section	__TEXT,__const
 	.p2align	4               ## @__const.main.a
-l___const.main.a:
+l___const.main.arr:
 	.long	0                       ## 0x0
 	.long	1                       ## 0x1
 	.long	2                       ## 0x2
