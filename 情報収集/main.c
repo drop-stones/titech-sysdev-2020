@@ -10,7 +10,7 @@ struct user {
 int
 main (int argc, char *argv[])
 {
-  int a [5] = {0, 1, 2, 3, 4};
+  int arr [5] = {0, 1, 2, 3, 4};
   struct user u;
   u.id = 100;
   strcpy (u.name, "Your name");
