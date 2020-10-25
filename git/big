@@ -1,0 +1,32 @@
+hunk0 {
+  dog,
+  cat,
+  lion,
+  horse,
+  pig,
+  fish
+}
+
+hunk1 {
+  PC,
+  phone,
+  car,
+  CD,
+  airplane,
+  projector
+}
+
+hunk2 {
+  rice,
+  curry,
+  udon,
+  ramen,
+  banana,
+  apple,
+  oden,
+  bread,
+  salad,
+  pasta,
+  soup,
+  meat
+}
